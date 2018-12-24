@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "微软雅黑","lucida grande","trebuchet ms","Hiragino Sans GB","Segoe UI","Segoe UI Light","microsoft jhenghai",sans-serif;
+	color: #666666;
+}
+.header{
+	width: 100%;
+}
+.header_img{
+	width: 16%;
+	float: left;
+}
+.header_img img{
+	width: 100%;
+	height: 80px;
+}
+.header_title1{
+	height: 100px;
+}
+.header_title1 ul li{
+	width: 9.8%;
+	float: left;
+	list-style: none;
+	margin-right:2.8% ;
+	margin-left: 2.8%;
+	font-size: 30px;
+	line-height: 80px;
+	cursor: pointer;
+	position: relative;
+}
+.header_title1 ul li span{
+	margin-left: 40px;
+	margin-right: 20px;
+	font-size: 20px;
+}
+.header_title1 ul li:before{
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 100%;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid #666666;
+	transition: all 0.2s linear;
+}
+.header_title1 ul li:hover:before{
+	width: 75%;
+	left: -10px;
+}
+.header_titile1 ul li:hover~li:before{
+	left: 0px;
+}
+.header_title ul li span{
+	margin-left: 40px;
+	margin-right: 20px;
+	font-size: 20px;
+}
+.load{
+	margin-left: 10px;
+	font-size: 20px;
+	list-style: none;
+	line-height: 90px;
+	cursor: pointer;
+}
+.load a{
+	color:#666666;
+	text-decoration: none;
+}
+.load span{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 15px;
+}
+

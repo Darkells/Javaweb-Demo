@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "微软雅黑","lucida grande","trebuchet ms","Hiragino Sans GB","Segoe UI","Segoe UI Light","microsoft jhenghai",sans-serif;
+	color: #666666;
+}
+.wrap{
+	width: 1124px;
+}
+.alluser_header{
+	width: 1159px;
+	position: relative;
+	height: 45px;
+	background: linear-gradient(to bottom,#267dc5,#0f69ab);
+	border-top: 1px solid #68afe9;
+}
+.alluser_header .title_container .title{
+	display: block;
+	height: 32px;
+	width: 80px;
+	line-height: 32px;
+	color: white;
+	margin-top: 3px;
+	margin-left: 20px;
+	float: left;
+	font-size: 18px;
+}
+.title_photo{
+	float: left;
+}
+.title_photo img{
+	width: 15px;
+	height: 15px;
+	margin-top: 12px;
+	margin-left: 20px;
+	opacity: 0.4;
+}
+.buttons{
+	width: 260px;
+	height: 45px;
+	line-height: 40px;
+	margin-left: 882px;
+}
+.buttons input{
+	width: 68px;
+	height: 32px;
+}
+.add{
+	background-color: #52b266;
+	color: white;
+	border: 1px black;
+	box-shadow: 0 0 1px grey; 
+}
+.import{
+	color: white;
+	background-color: #52b266;
+	border: 1px black;
+	margin-left: -5px;
+	box-shadow: 0 0 1px grey; 
+}
+.merge{
+	background: linear-gradient(to bottom,#267dc5,#0f69ab);
+	border: 1px solid gray;
+	box-shadow: 0 0 1px white;
+	color: white;
+	margin-left: 3px;
+}
+.export{
+	width: 30px;
+	height: 30px;
+	border: 1px solid gray;
+	box-shadow: 0 0 5px lightgray;
+	position: absolute;
+	background:linear-gradient(to bottom,#267dc5,#0f69ab) ;
+	top: 6px;
+	right: 10px;
+}
+.tr_1{
+	border: 0px;
+	color: #DCEAF4;
+	opacity: 1;
+	position: relative;
+}
+.tr_1_div{
+	height: 35px;
+	width: 50px;
+	line-height: 35px;
+	background-color: rgba(0,0,0,.25);
+}
+.tr_1_div:after{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	display: block;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+	top: 98px;
+	left: 275px;
+	transform: rotate(-45deg);
+}
+.tr_1_div input{
+	margin-left: -15px;
+	width: 20px;
+	height: 20px;
+	margin-top: 8px;
+	border: 1px;
+	background-color: rgba(0,0,0,.25);
+}
+.tr_2_div{
+	width: 50px;
+	height: 20px;
+}
+.tr_2_div img{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.table_container{
+	max-height: 508px;
+	overflow-y: scroll;
+}
+.tr_2{
+	border: 0;
+	line-height: 20px;
+}
+.tr_2:hover{
+	background-color: lightblue;
+}
+.doing{
+	filter: alpha(opacity = 30);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+	background-color: #000000;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	overflow: hidden;
+}
+.modify{
+	border: 1px solid #0081C2;
+	background-color: lightskyblue;
+	width: 500px;
+	height: 450px;
+	margin-top: -150px;
+	margin-left: -160px;
+	border-radius: 3%;
+	box-shadow: 0 0 10px whitesmoke;
+	z-index: 1001;
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+}
+.modify_container{
+	background-color: #FFFFFF;
+	height: 350px;
+	width: 450px;
+	margin: 50px auto;
+}
+.div1{
+	margin-left: 20px;
+	float: left;
+	margin-top: 20px;
+}
+.div1 input{
+	width: 180px;
+	margin-top: 20px;
+	height: 20px;
+}
+.div1 span{
+	color: red;
+}
+.div2{
+	width: 190px;
+	margin-left: 280px;
+}
+.div2 input{
+	margin-top: 10px;
+}
+.div2 img{
+	width: 150px;
+	height: 200px;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+.div3{
+	margin-top: 20px;
+	margin-left: 200px;
+}
+.div3 input{
+	margin-right: 20px;
+}
+.delete{
+	position: absolute;
+	width: 30px;
+	height:30px;
+	right: 10px;
+	top: 5px;
+}

@@ -1,0 +1,15 @@
+.footer{
+	margin-bottom: 0px;
+	width: 1280px;
+}
+.footer .copyright{
+	text-align: center;
+	width: 1348px;
+	background-color: #666;
+	margin-top: 50px;
+	font-size: 20px;
+	font-family: tahoma;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+}

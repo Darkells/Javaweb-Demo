@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "微软雅黑","lucida grande","trebuchet ms","Hiragino Sans GB","Segoe UI","Segoe UI Light","microsoft jhenghai",sans-serif;
+	color: #666666;
+	height: 100%;
+	width: 100%;
+}
+.middle{
+	height: 100%;
+}
+menu{
+	max-height: 1350px
+}
+.navigation-left{
+	margin-left:0px ;
+	width: 321px;
+	background-color: #00CC99;
+	height: 100%;
+	float: left;
+}
+.navigation-left menu{
+	background-color: 	#15f5f5;
+	width: 320px;
+	max-height: 100%;
+	overflow: auto;
+}
+.navigation-header{
+	width: 320px;
+	height: 60px;
+	line-height: 60px;
+	color: gray;
+	font-size: 20px;
+	font-weight: bold;
+	background-color:white ;
+}
+.navigation-header img{
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 40px;
+	box-shadow: 0px 0px 5px gray;
+}
+menu .menu-item{
+	position: relative;
+}
+menu .menu-item > input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	opacity: 0;
+	cursor: pointer;
+}
+.menu-parent1{
+	display: block;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px solid #FFFFFF;
+	margin-top: -10px;
+}
+.menu-parent1-2{
+	margin-top: -1px;
+}
+.menu-parent1:hover{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.menu-parent1:visited{
+    color: #FFFFFF;
+    background-color: #5375f1;
+}
+menu span{
+	display: block;
+	padding: 5px 10px;
+	cursor: pointer;
+	line-height: 46px;
+}
+menu span:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+menu span:active{
+    color: #FFFFFF;
+    background-color: #5375f1;
+}
+menu span.menu-child{
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #FFFFFF;
+	width: 320px;
+	height: 40px;
+	border-bottom: 1px solid #9DA0A4;
+}
+menu .menu-item-list{
+	max-height: 0px;
+	background-color: white;
+	overflow: hidden;
+	transition: all 0.3s ease-in;
+}
+menu :checked + .menu-item-list {
+	max-height: 500px;
+}
+.menu-parent1:after{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-bottom: 5px solid #FFFFFF;
+	border-left: 5px solid #FFFFFF;
+	position: absolute;
+	top: 20px;
+	right: 12px;
+	transform: rotate(-135deg);
+	transition: transform 0.2s ease-in;
+}
+.menu-parent1.open:after{
+	transform: rotate(-45deg);
+	transition: transform 0.2s ease-in;
+	top: 18px;
+}
+.find{
+	width: 46px;
+	height: 23px;
+	border: 0px;
+	background-color: lightblue;
+	box-shadow: 0px 0px 5px lightgrey;
+	color: gray;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-top: 12px;
+	float: left;
+	line-height: 23px;
+}
+.find-container{
+	width: 200px;
+	height: 25px;
+	box-shadow: 0px 0px 5px lightgrey;
+	border: 1px solid lightgray;
+}
+.mainbody{
+	width:1028px ;
+	height: 515px;
+	border: 1px solid lightgray;
+	box-shadow: 0px 0px 5px lightgrey;
+	margin-left: 321px;
+	overflow-y: scroll;
+}
+
