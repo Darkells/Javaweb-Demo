@@ -1,0 +1,41 @@
+#main {
+	padding-top: 80px;
+}
+.round_icon{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#admin{
+	padding-top: 25px;
+}
+
+#link{
+	padding-top: 22px;
+	padding-bottom: 20px;
+}
+
+#td1{
+    
+}
+
+.symbol{
+    padding:30px 0px 0px 30px;
+    font-size: 40px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card{
+    background-size: contain;
+    background-image: url(weather.jpg);
+}
+
+
