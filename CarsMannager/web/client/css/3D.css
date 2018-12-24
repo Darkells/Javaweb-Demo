@@ -1,0 +1,65 @@
+* {
+	padding: 0 ;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+*:before,*:after{
+	box-sizing: border-box;
+}
+html,body{
+	min-height: 100%;
+}
+.auto_play{
+	margin: 4% auto;
+	width: 20%;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#wrap{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 50s infinite;
+}
+#wrap:hover{
+	animation-play-state: paused;
+}
+#wrap figure{
+	display: block;
+	position: absolute;
+	width: 300px;
+	height: 220px;
+	left: 10px;
+	top: 10px;
+	overflow: hidden;
+	border: solid 5px whitesmoke;
+}
+#wrap figure img{
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	height: 100%;
+}
+#wrap figure img:hover{
+	filter: grayscale(0);
+	transform: scale(1.2,1.2);
+}
+#wrap figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#wrap figure:nth-child(2){transform: rotateY(60deg) translateZ(288px);}
+#wrap figure:nth-child(3){transform: rotateY(120deg) translateZ(288px);}
+#wrap figure:nth-child(4){transform: rotateY(180deg) translateZ(288px);}
+#wrap figure:nth-child(5){transform: rotateY(240deg) translateZ(288px);}
+#wrap figure:nth-child(6){transform: rotateY(300deg) translateZ(288px);}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
